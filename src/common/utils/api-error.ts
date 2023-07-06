@@ -9,7 +9,7 @@ export abstract class ApiError extends Error {
     super(type);
   }
 
-  public static handleError(err: ApiError, res: Response): any {
+  public static handleError(err: ApiError, res: Response): Response {
     switch (err.type) {
       case ErrorType.CONFLICT_REQUEST:
         return new ConflictResponse(err.message).sendResponse(res);

@@ -3,4 +3,5 @@
  */
 
 export * from "./dbConnection.helper";
-export * from "./catchAsyncHandler";
+export * from "./catchAsyncHandler.helper";
+export * from "./bcrypt.helper";
