@@ -1,8 +1,8 @@
 import Joi from "joi";
 import { IAuthSignupPayload } from "src/common/interfaces";
 
-export const signupValidation = (data: IAuthSignupPayload & { confirmPassword?: string }): Joi.ValidationResult<IAuthSignupPayload & { confirmPassword?: string }> => {
-  const schema = Joi.object<IAuthSignupPayload & { confirmPassword?: string }, true>({
+export const signupValidation = (data: IAuthSignupPayload): Joi.ValidationResult<IAuthSignupPayload> => {
+  const schema = Joi.object<IAuthSignupPayload, true>({
     firstName: Joi.string().trim().required(),
     lastName: Joi.string().trim().required(),
     username: Joi.string().trim().required(),

@@ -150,6 +150,10 @@ export default {
                   type: "string",
                   example: "Chand"
                 },
+                email: {
+                  type: "string",
+                  example: "devlop143@gmail.com"
+                },
                 username: {
                   type: "string",
                   example: "suraj12"
@@ -158,21 +162,9 @@ export default {
                   type: "string",
                   example: "0000000000"
                 },
-                status: {
-                  type: "boolean",
-                  example: false
-                },
-                role: {
-                  type: "string",
-                  example: "USER"
-                },
                 avatar: {
                   type: "string",
                   example: null
-                },
-                deleted: {
-                  type: "string",
-                  example: false
                 },
                 createdAt: {
                   type: "string",
@@ -181,10 +173,6 @@ export default {
                 updatedAt: {
                   type: "string",
                   example: "2023-06-18T17:35:47.699Z"
-                },
-                deletedAt: {
-                  type: "boolean",
-                  example: false
                 }
               }
             }
