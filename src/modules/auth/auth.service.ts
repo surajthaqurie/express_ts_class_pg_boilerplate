@@ -1,8 +1,8 @@
-import { BcryptHelper, Users } from "src/helpers";
+import { BcryptHelper, Users } from "../../helpers";
 import { signupValidation } from "./auth.validation";
-import { AUTH_MESSAGE_CONSTANT } from "src/common/constants";
-import { IUser, IAuthSignupPayload, IAuthSignup } from "src/common/interfaces";
-import { BadRequestError, ConflictRequestError, sanitizeFields } from "src/common/utils";
+import { AUTH_MESSAGE_CONSTANT } from "../../common/constants";
+import { IUser, IAuthSignupPayload, IAuthSignup } from "../../common/interfaces";
+import { BadRequestError, ConflictRequestError, sanitizeFields } from "../../common/utils";
 
 class AuthService {
   async signup(reqBody: IAuthSignupPayload): Promise<IAuthSignup> {

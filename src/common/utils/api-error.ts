@@ -1,7 +1,7 @@
 import { Response } from "express";
 import { ErrorType } from "../enums";
 import { ConflictResponse, BadRequestResponse, InternalErrorResponse } from "./api-response";
-import { env } from "src/configs";
+import { env } from "../../configs";
 import { API_ERROR_MESSAGE_CONSTANT } from "../constants";
 
 export abstract class ApiError extends Error {
