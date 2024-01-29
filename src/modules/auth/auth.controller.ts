@@ -1,10 +1,10 @@
 import { NextFunction, Request, Response } from "express";
 
 import authService from "./auth.service";
-import { SuccessCreatedResponse } from "../../common/utils";
-import { AUTH_MESSAGE_CONSTANT } from "../../common/constants";
-import { IAuthSignup } from "../../common/interfaces";
-import { catchAsyncHandler } from "../../helpers";
+import { SuccessCreatedResponse } from "src/common/utils";
+import { AUTH_MESSAGE_CONSTANT } from "src/common/constants";
+import { IAuthSignup } from "src/common/interfaces";
+import { catchAsyncHandler } from "src/helpers";
 
 export class AuthController {
   async signup(req: Request, res: Response, next: NextFunction): Promise<Response> {

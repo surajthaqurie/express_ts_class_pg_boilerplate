@@ -16,7 +16,7 @@ const config: Config = {
   clearMocks: true,
 
   moduleNameMapper: {
-    "@/(.*)": "<rootDir>/src/$1"
+    "^src/(.*)": "<rootDir>/src/$1"
   }
 };
 
