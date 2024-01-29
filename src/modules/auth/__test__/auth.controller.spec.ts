@@ -1,13 +1,13 @@
 // import { AUTH_MESSAGE_CONSTANT } from "../../../common/constants";
 import { AuthController } from "../auth.controller";
 import authService from "../auth.service";
-import { SuccessCreatedResponse } from "../../../common/utils";
+import { SuccessCreatedResponse } from "src/common/utils";
 
 import { NextFunction, Request, Response } from "express";
 
 jest.mock("../auth.service");
 // For second test case
-jest.mock("../../../common/utils", () => {
+jest.mock("src/common/utils", () => {
   const originalModule = jest.requireActual("../../../common/utils");
   return {
     ...originalModule,
